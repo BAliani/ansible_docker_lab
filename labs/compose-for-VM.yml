@@ -1,0 +1,224 @@
+services:
+  manager09:
+    build:
+      context: .
+      dockerfile: Dockerfile_manager
+    hostname: manager09
+    ports:
+      - "2209:22"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp09
+
+  node09_1:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node09_1
+    ports:
+      - "2309:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp09
+
+  node09_2:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node09_2
+    ports:
+      - "2409:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp09
+
+  manager10:
+    build:
+      context: .
+      dockerfile: Dockerfile_manager
+    hostname: manager10
+    ports:
+      - "2210:22"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp10
+
+  node10_1:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node10_1
+    ports:
+      - "2310:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp10
+
+  node10_2:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node10_2
+    ports:
+      - "2410:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp10
+
+  manager11:
+    build:
+      context: .
+      dockerfile: Dockerfile_manager
+    hostname: manager11
+    ports:
+      - "2211:22"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp11
+
+  node11_1:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node11_1
+    ports:
+      - "2311:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp11
+
+  node11_2:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node11_2
+    ports:
+      - "2411:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp11
+
+  manager12:
+    build:
+      context: .
+      dockerfile: Dockerfile_manager
+    hostname: manager12
+    ports:
+      - "2212:22"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp12
+
+  node12_1:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node12_1
+    ports:
+      - "2312:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp12
+
+  node12_2:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node12_2
+    ports:
+      - "2412:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp12
+
+  manager13:
+    build:
+      context: .
+      dockerfile: Dockerfile_manager
+    hostname: manager13
+    ports:
+      - "2213:22"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp13
+
+  node13_1:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node13_1
+    ports:
+      - "2313:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp13
+
+  node13_2:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node13_2
+    ports:
+      - "2413:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp13
+
+  manager14:
+    build:
+      context: .
+      dockerfile: Dockerfile_manager
+    hostname: manager14
+    ports:
+      - "2214:22"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp14
+
+  node14_1:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node14_1
+    ports:
+      - "2314:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp14
+
+  node14_2:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    hostname: node14_2
+    ports:
+      - "2414:80"
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - tp14
+
+networks:
+  tp09:
+  tp10:
+  tp11:
+  tp12:
+  tp13:
+  tp14:
